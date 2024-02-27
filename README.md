@@ -80,6 +80,7 @@ L'anglais est un atout pour la programmation, car la majorité des ressources so
 - [Grid Garden - Un jeu pour apprendre les grid CSS](https://cssgridgarden.com/#fr)
 - [CSS Diner - Un jeu pour apprendre les sélecteurs CSS](https://flukeout.github.io/)
 - [CSS Battle - Un jeu pour apprendre le CSS](https://cssbattle.dev/)
+- [Codepen - Un site pour partager du code HTML/CSS/JS](https://codepen.io/)
 
 ### :calendar: 26/02/2024
 
