@@ -14,7 +14,37 @@
 
 ---
 
+
+
 ## Saison 1
+
+### :calendar: 28/02/2024
+
+:package: _Récap du jour_
+
+Ladies and gentlemen, aujourd'hui, nous avons vu les bases du responsive design.
+
+![woaw](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDhzdTN5amh5d3NrZGY1aXZyMnlsMDB2Zm9ocXpocHVjOHYwdHhlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iFJfZNSDDQUVk9bvDC/giphy.gif)
+
+Le responsive, c'est la capacité d'un site web à s'adapter à la taille de l'écran de l'utilisateur. C'est un élément essentiel pour un site web, car il est important que le site soit lisible sur tous les supports.
+
+Nous avons parler des grids et flexbox, qui sont des outils de mise en page en CSS. Ils permettent de créer des mises en page complexes et de les rendre responsive.
+
+
+### 💡Ce qu'il faut retenir
+
+Voilà un petit récap des breakpoints (points de rupture) les plus utilisés : 
+
+![img](./assets/mediaquerie.png)
+
+
+:link: _Liens utiles_
+
+- [CSS [FR] - Responsive Web Design](https://docs.google.com/presentation/d/1Uk_vi8dYmhXGHFg32Bdd-8PSTNGaqF_EibH_Lum6-bI/edit)
+---
+- [Am I Responsive?](https://ui.dev/amiresponsive?url=https://www.wildcodeschool.com/fr-fr/)
+- [Interactive CSS Grid Generator | Layoutit Grid](https://grid.layoutit.com/)
+- [:root - CSS : Feuilles de style en cascade | MDN](https://developer.mozilla.org/fr/docs/Web/CSS/:root)
 
 ### :calendar: 27/02/2024
 
