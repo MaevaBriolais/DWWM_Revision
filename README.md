@@ -14,9 +14,50 @@
 
 ---
 
-
-
 ## Saison 1
+
+### :calendar: 29/02/2024
+
+:package: _Récap du jour_
+
+Nouvelle connaissance débloquée : Le Terminal.
+
+![giphy](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExamRzNDN0bXdqN2V4bHB0cGVkMDY1eXNwNjhiMGhwZHZrbHI4NnJ6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lptIayuGHV9Utu3iTv/giphy.gif)
+
+Oui, le terminal est un outil puissant, mais il peut être intimidant au début. C'est pourquoi nous avons vu les bases pour vous aider à vous familiariser avec cet outil.
+
+### 💡Ce qu'il faut retenir
+
+Le kit de survie du terminal :
+
+| Commande  | Description                                          |
+|-----------|------------------------------------------------------|
+| `pwd`     | affiche le répertoire courant                        |
+| `ls`      | liste les fichiers et dossiers du répertoire courant |
+| `cd`      | change de répertoire                                 |
+| `mkdir`   | crée un dossier                                      |
+| `touch`   | crée un fichier                                      |
+| `rm`      | supprime un fichier                                  |
+| `rm -r`   | supprime un dossier                                  |
+| `mv`      | déplace un fichier ou un dossier                     |
+| `cp`      | copie un fichier ou un dossier                       |
+| `cat`     | affiche le contenu d'un fichier                      |
+| `echo`    | affiche un message à l'écran                         |
+| `clear`   | efface le terminal                                   |
+| `.`       | répertoire courant                                   |
+| `..`      | répertoire parent                                    |
+| `man`     | affiche le manuel d'une commande                     |
+| `history` | affiche l'historique des commandes                   |
+
+Bien sûr, il y a beaucoup plus de commandes, mais ce sont les bases pour commencer.
+
+:link: _Liens utiles_
+
+- [Web [FR] - Terminal](https://docs.google.com/presentation/d/1LWyNTqUL8qsP2bRF5a9V--iGav9wt2Q2b08on67Coz8/edit#slide=id.p)
+
+---
+- [Voyage au centre de l’ordinateur | Wild code school](https://wildcodeschool.github.io/workshop-terminal/README-FR#conna%C3%AEtre-ses-racines)
+- [Exo console](https://www.notion.so/anthony-gorski/Console-bf80d102e2dd4a039a4a8f752cce619e)
 
 ### :calendar: 28/02/2024
 
