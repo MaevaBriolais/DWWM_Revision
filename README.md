@@ -16,6 +16,48 @@
 
 ## Saison 1
 
+### :calendar: 01/03/2024
+
+:package: _Récap du jour_
+
+Notre petit cours d'aujourd'hui était sur les bases du web.
+Le principe est de comprendre comment fonctionne le web, et ainsi, faire la différence entre le `web` et `internet`.
+
+### 💡Ce qu'il faut retenir
+
+**Web**
+
+Le web est un système de publication et de consultation de documents hypertextes liés entre eux et accessibles via le réseau internet.
+
+**Internet**
+
+Internet est un réseau informatique mondial accessible au public. Il permet de partager des informations et des ressources.
+
+**Protocoles**
+
+- HTTP(S) : Hypertext Transfer Protocol (Secure)
+- FTP : File Transfer Protocol
+- etc.
+
+**Navigateur**
+
+Un navigateur web est un logiciel permettant de consulter des pages web. Les plus connus sont Chrome, Firefox, Safari, Edge, Opera.
+
+**URL**
+
+Une URL (Uniform Resource Locator) est une adresse web. Elle est composée de plusieurs éléments :
+- Protocole : `http://` ou `https://`
+- Nom de domaine : `www.google.com`
+- Chemin : `/search?q=hello+world`
+
+### Bonus
+
+![ipv4 ipv6](https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/IPv4%20vs.%20IPv6%20What%E2%80%99s%20the%20Difference/IPv4-vs-IPv6-FR.png?width=660&name=IPv4-vs-IPv6-FR.png)
+
+:link: _Liens utiles_
+
+- [Web [FR] - Web Basics](https://docs.google.com/presentation/d/1fDH6eD-udpIGQ8b_LF2CLQCJwN94Bj_h33K4MmD6xMo/edit#slide=id.p)
+
 ### :calendar: 29/02/2024
 
 :package: _Récap du jour_
