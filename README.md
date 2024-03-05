@@ -22,9 +22,9 @@
 
 ✨ _LES BASES PROGRAMMATIONS_ ✨
 
-![img](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnE2MHJ5d2Z2Y3Fqb2tucXN2MjlhYWg1c2ttMG9oMGxxb2tpaHM1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QQcBFlNA4HKkh3A02N/giphy.gif)
+![img](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnE2MHJ5d2Z2Y3Fqb2tucXN2MjlhYWg1c2ttMG9oMGxxb2tpaHM1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QQcBFlNA4HKkh3A02N/giphy.gif)
 
-Alors oui, c'est assez dure, il y a plein de chose à connaitre, mais en vrai. Çaaa vaaaaa !
+Alors, oui, c'est assez dur, il y a plein de choses à connaître, mais en vrai. Çaaa vaaaaa !
 
 Les éléments communs pour tout le monde :
 
@@ -77,7 +77,7 @@ Les non primitifs :
 
 #### Les opérateurs
 
-Il y a les opérateurs mathématiques que vous connaissez déja, mais il y en a d'autres.
+Il y a les opérateurs mathématiques que vous connaissez déjà, mais il y en a d'autres.
 
 Voilà le lien pour les opérateurs : [Opérateurs](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_et_Op%C3%A9rateurs)
 
@@ -89,7 +89,7 @@ Les tableaux permettent de stocker plusieurs valeurs.
 let monTableau = [2, "Hello", true, ["coucou"]];
 ```
 
-Il exitent plusieurs méthodes pour manipuler les tableaux :
+Il existent plusieurs méthodes pour manipuler les tableaux :
 
 - `push()` : ajoute un élément à la fin du tableau
 - `pop()` : supprime le dernier élément du tableau
