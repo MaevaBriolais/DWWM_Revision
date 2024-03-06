@@ -16,13 +16,71 @@
 
 ## Saison 1
 
+### :calendar: 06/03/2024
+
+:package: _Récap du jour_
+
+#### C'est quoi git & github ❓
+
+`Git` est un logiciel de versionning, c'est à dire qu'il permet de gérer les versions de notre code, il est en local.
+
+`Github` est un service en ligne qui permet de stocker notre code en ligne.
+
+#### Les commandes de bases
+
+| commande                  | description                                 |
+| ------------------------- | ------------------------------------------- |
+| `git init`                | permet d'initialiser un repo git            |
+| `git add .`               | permet d'ajouter tous les fichiers au stage |
+| `git commit -m "message"` | permet de créer un commit                   |
+| `git push`                | permet d'envoyer le code sur github         |
+| `git pull`                | permet de récupérer le code sur github      |
+| `git status`              | permet de voir l'état du repo git           |
+| `git checkout`            | permet de changer de branche                |
+| `git switch`              | depuis la version 2.23                      |
+| `git branch`              | permet de créer une branche                 |
+
+![git](assets/gitImg.png)
+
+Si vous souhaitez avoir un git cheat sheet, voici le lien : [Git Cheat Sheet](./assets/git-cheat-sheet-education.png)
+
+```mermaid
+gitGraph
+   commit
+   commit
+   branch develop
+   checkout develop
+   commit
+   commit
+   checkout main
+   merge develop
+   commit
+   commit
+```
+
+Ensuite, à vous l'atelier git & github !
+
+:link: _Liens utiles_
+
+- [Git / GitHub [FR] - Intro](https://docs.google.com/presentation/d/1e4G26qbY_5vGG0l9w05TCuIv_Kkw-bxFeZ4Q1hc6xFs/edit#slide=id.p)
+
+---
+
+- [WorkShop Chip & Dale](https://wildcodeschool.github.io/workshop-git/README-FR)
+
+---
+
+- [SSH Key & Git by Antho](./assets/GIT.pdf)
+- [Apprendre Git](https://learngitbranching.js.org/?locale=fr_FR)
+- [Simple Git Workflow | Wild code school](https://wildcodeschool.github.io/workflow-project-1/README-FR)
+
 ### :calendar: 05/03/2024
 
 :package: _Récap du jour_
 
 ✨ _LES BASES PROGRAMMATIONS_ ✨
 
-![img](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnE2MHJ5d2Z2Y3Fqb2tucXN2MjlhYWg1c2ttMG9oMGxxb2tpaHM1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QQcBFlNA4HKkh3A02N/giphy.gif)
+![gif](https://media4.giphy.com/media/5aLrlDiJPMPFS/200w.gif?cid=6c09b952yip4czs96byhqxsyhdve8k5atj8kwqv0ga348rgg&ep=v1_gifs_search&rid=200w.gif&ct=g)
 
 Alors, oui, c'est assez dur, il y a plein de choses à connaître, mais en vrai. Çaaa vaaaaa !
 
