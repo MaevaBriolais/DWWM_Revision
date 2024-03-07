@@ -16,6 +16,38 @@
 
 ## Saison 1
 
+### :calendar: 07/03/2024
+
+:package: _Récap du jour_
+
+Nous avons vu aujourd'hui comment passer des wireframes papier vers un prototype sur figma ainsi que les bonnes pratiques UX/UI.
+
+Pour rappel :
+
+![](assets/ux-usability-banner.png)
+
+:link: _Liens utiles_
+
+- [UX/UI [FR] - Website conception](https://docs.google.com/presentation/d/1cMJyttPWY6dyjU3bPfMU1VVeP-yQQzK0LHRL1CR1IjU/edit#slide=id.p)
+- [UX/UI [FR] - Web design](https://docs.google.com/presentation/d/1EqV-WMtcyuntKUYJnZC7G9N49gnrZvjvGvcZr9BOfPw/edit#slide=id.p)
+
+---
+
+- [Analyse et vérification du contraste | Adobe Color](https://color.adobe.com/fr/create/color-contrast-analyzer)
+- [User Inyerface - A worst-practice UI experiment](https://userinyerface.com/)
+
+---
+
+Merci à [Fanny](https://github.com/fanny-pretre) pour les liens suivants :
+
+- [Définition de la Loi de Fitts, son rôle dans l'expérience utilisateur (UX)](https://www.usabilis.com/definition-loi-de-fitts/)
+- [color.adobe.com/fr/trends](https://color.adobe.com/fr/trends)
+- [Les lois de la Gestalt appliquées au Design | bluedrop.fr, Agence web Drupal - Usinons Drupal](https://www.bluedrop.fr/content/les-lois-de-la-gestalt-appliqu%C3%A9es-au-design#:~:text=Cette%20th%C3%A9orie%20cherche%20%C3%A0%20expliquer,une%20vision%20globale%20des%20choses)
+
+---
+
+- [WAVE Evaluation Tool](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
+
 ### :calendar: 06/03/2024
 
 :package: _Récap du jour_
