@@ -16,6 +16,34 @@
 
 ## Saison 1
 
+### :calendar: 08/03/2024
+
+:package: _Récap du jour_
+
+_Comment faire une bonne démo_ voilà le thème abordé aujourd'hui.
+
+Nous avons vu ce qu'il fallait faire et ne pas faire lors d'une démo. ⬇️
+
+- [x] N’attendez pas la dernière minute
+- [x] Soyez clair et concis
+- [x] Appuyez-vous sur votre support
+- [x] Adaptez-vous à votre interlocuteur
+- [x] Préparez la répartition de la parole
+- [x] Anticipez les questions / réponses
+- [x] Entraînez-vous !!!!!
+
+Nous commençons aussi les press reviews.
+Chaque semaine, vous devez parler d'un sujet en relation avec le dev'.
+
+- Un fait d'actualité
+- Un nouvel outil
+- Un framework
+- Etc.
+
+:link: _Liens utiles_
+
+- [Onboarding [FR] - How to do a good demo](https://docs.google.com/presentation/d/1ZaYBN_BnKqAhBKcG_FMNP3coTk_nVaEaS7qPf3Dq12U/edit#slide=id.p1)
+
 ### :calendar: 07/03/2024
 
 :package: _Récap du jour_
