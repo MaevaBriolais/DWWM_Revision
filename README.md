@@ -14,6 +14,87 @@
 
 ---
 
+## Saison 2
+
+### :calendar: 12/03/2024
+
+:package: _Récap du jour_
+
+<em>✨ Enfin la manipulation du DOM ✨</em>
+
+![noo](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmJvY29zN3JkbzZwb2MxZDZ5N3QxOTIzbjJuazhydDJhaDh1ZWo3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6gLyE15StAs3C/giphy.gif)
+
+### Ce qu'il faut retenir
+
+Le DOM (Document Object Model) est une interface de programmation pour les documents HTML.
+
+Il représente la page web sous forme d'arbre d'objets.
+
+Nous avons besoins de 3 étapes pour manipuler le DOM :
+
+1. **Sélectionner un élément**
+2. **Ajouter un événement**
+3. **Modifier le contenu**
+
+#### Sélectionner un élément
+
+Il existe plusieurs façons de sélectionner un élément :
+
+- `document.getElementById('id')`
+- `document.getElementsByClassName('class')`
+- `document.getElementsByTagName('tag')`
+
+Moi je préfère utiliser les méthodes suivantes :
+
+- `document.querySelector('selecteur')`
+- `document.querySelectorAll('selecteur')`
+
+#### Ajouter un événement
+
+Il existe plusieurs type d'événements :
+
+- `click` : au clic
+- `change` : à la modification
+- `mouseover` : au survol
+- ...
+
+#### Modifier le contenu
+
+Il existe plusieurs manière de modifier le contenu :
+
+- `innerHTML` : permet de modifier le contenu HTML
+- `textContent` : permet de modifier le contenu textuel
+- `setAttribute` : permet de modifier un attribut
+- `style` : permet de modifier le style
+- ...
+
+#### Comment fonctionne la balise script
+
+![script](./assets/classicImportJs.png)
+![script](./assets/asyncImportJs.png)
+![script](./assets/deferImportJs.png)
+
+### 💡 Pour brillé en société
+
+#### IIFE
+
+Ici, nous avons une fonction qui s'appel et s'execute directement.
+On appelle ça une [IIFE](https://developer.mozilla.org/fr/docs/Glossary/IIFE) (Immediately Invoked Function Expression).
+
+```js
+//IIFE
+
+(function () {
+  //code
+})();
+```
+
+:link: _Liens utiles_
+
+- [JS [FR] - DOM basics](https://docs.google.com/presentation/d/1oKNELlK8d8x4fcGj_w0m6lmCbxS3ZKvtnibw8b7jjxg/edit)
+- [DOM workshop | Wild code school](https://wildcodeschool.github.io/workshop-js-dom/)
+- [GorskiAnthony/tp-todo](https://github.com/GorskiAnthony/tp-todo)
+
 ## Saison 1
 
 ### :calendar: 08/03/2024
