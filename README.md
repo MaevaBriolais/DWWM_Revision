@@ -16,6 +16,22 @@
 
 ## Saison 2
 
+### :calendar: 13/03/2024
+
+**Partie 1 / 2**
+
+:package: _Récap du jour_
+
+Bon, rien de trop nouveau sous le soleil.
+Mais on quand même vu les bases.
+
+N'hésite pas à aller au [05/03/2024](#calendar-05032024), c'est quasiment le même cours.
+
+:link: _Liens utiles_
+
+- [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/)
+- [Optional chaining (?.) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
 ### :calendar: 12/03/2024
 
 :package: _Récap du jour_
