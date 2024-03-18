@@ -16,6 +16,105 @@
 
 ## Saison 2
 
+### :calendar: 14/03/2024
+
+**Partie 2 / 2**
+
+:package: _Récap du jour_
+
+Encore rien de nouveau, mais ça ne fait pas de mal 😎
+
+N'hésite pas à aller au [05/03/2024](#calendar-05032024), c'est quasiment le même cours.
+
+### :bulb: Pour brillé en société
+
+#### Optional chaining
+
+L'opérateur de chaînage optionnel `?.` permet de lire la valeur d'une propriété située au sein d'une chaîne de connexion avec une valeur `null` ou `undefined` sans lever d'erreur.
+
+```js
+let user = {}; // l'utilisateur est sans nom
+
+alert(user?.address?.street); // undefined (pas d'erreur)
+```
+
+Alors que sans l'opérateur de chaînage optionnel, nous aurions une erreur :
+
+```js
+let user = {}; // l'utilisateur est sans nom
+
+alert(user.address.street); // Erreur !
+```
+
+#### Arrow function
+
+Les fonctions fléchées sont des raccourcis pour déclarer des fonctions.
+
+```js
+// syntaxe
+// ici, en plus de la syntaxe, nous avons un return implicite
+let sum = (a, b) => a + b;
+
+/* équivalent à */
+
+let sum = function (a, b) {
+	return a + b;
+};
+```
+
+La différence entre `classic function` & `arrow function`
+
+```js
+const user = {
+	name: "anthony",
+	classicFunction: function () {
+		console.log(this, this.name);
+	},
+	arrowFunction: () => {
+		console.log(this, this.name);
+	},
+};
+
+user.classicFunction();
+user.arrowFunction();
+
+/**********/
+/* output */
+/**********/
+
+// {name: "anthony", classicFunction: ƒ, arrowFunction: ƒ} "anthony"
+
+// Window {window: Window, self: Window, document: document, name: "", location: Location, …} undefined
+```
+
+Ce que ça veut dire, c'est que les fonctions fléchées n'ont pas de `this` propre, elles prennent le `this` de leur parent.
+
+ET SURTOUT ! JAVA !== JAVASCRIPT
+
+code java pour un hello world:
+
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+code javascript pour un hello world:
+
+```js
+console.log("Hello, World");
+```
+
+Alors, c'est plus simple JS non ? :wink:
+
+:link: _Liens utiles_
+
+-   [JS [FR] - JS Basics](https://docs.google.com/presentation/d/1Nz2FAA4SaasV1qoXbTUPtjuJ8QvOoV1w76JBW9YN9Yw/edit)
+
+---
+
 ### :calendar: 13/03/2024
 
 **Partie 1 / 2**
@@ -29,8 +128,8 @@ N'hésite pas à aller au [05/03/2024](#calendar-05032024), c'est quasiment le m
 
 :link: _Liens utiles_
 
-- [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/)
-- [Optional chaining (?.) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+-   [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/)
+-   [Optional chaining (?.) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 
 ### :calendar: 12/03/2024
 
@@ -56,33 +155,33 @@ Nous avons besoins de 3 étapes pour manipuler le DOM :
 
 Il existe plusieurs façons de sélectionner un élément :
 
-- `document.getElementById('id')`
-- `document.getElementsByClassName('class')`
-- `document.getElementsByTagName('tag')`
+-   `document.getElementById('id')`
+-   `document.getElementsByClassName('class')`
+-   `document.getElementsByTagName('tag')`
 
 Moi je préfère utiliser les méthodes suivantes :
 
-- `document.querySelector('selecteur')`
-- `document.querySelectorAll('selecteur')`
+-   `document.querySelector('selecteur')`
+-   `document.querySelectorAll('selecteur')`
 
 #### Ajouter un événement
 
 Il existe plusieurs type d'événements :
 
-- `click` : au clic
-- `change` : à la modification
-- `mouseover` : au survol
-- ...
+-   `click` : au clic
+-   `change` : à la modification
+-   `mouseover` : au survol
+-   ...
 
 #### Modifier le contenu
 
 Il existe plusieurs manière de modifier le contenu :
 
-- `innerHTML` : permet de modifier le contenu HTML
-- `textContent` : permet de modifier le contenu textuel
-- `setAttribute` : permet de modifier un attribut
-- `style` : permet de modifier le style
-- ...
+-   `innerHTML` : permet de modifier le contenu HTML
+-   `textContent` : permet de modifier le contenu textuel
+-   `setAttribute` : permet de modifier un attribut
+-   `style` : permet de modifier le style
+-   ...
 
 #### Comment fonctionne la balise script
 
@@ -101,15 +200,15 @@ On appelle ça une [IIFE](https://developer.mozilla.org/fr/docs/Glossary/IIFE) (
 //IIFE
 
 (function () {
-  //code
+	//code
 })();
 ```
 
 :link: _Liens utiles_
 
-- [JS [FR] - DOM basics](https://docs.google.com/presentation/d/1oKNELlK8d8x4fcGj_w0m6lmCbxS3ZKvtnibw8b7jjxg/edit)
-- [DOM workshop | Wild code school](https://wildcodeschool.github.io/workshop-js-dom/)
-- [GorskiAnthony/tp-todo](https://github.com/GorskiAnthony/tp-todo)
+-   [JS [FR] - DOM basics](https://docs.google.com/presentation/d/1oKNELlK8d8x4fcGj_w0m6lmCbxS3ZKvtnibw8b7jjxg/edit)
+-   [DOM workshop | Wild code school](https://wildcodeschool.github.io/workshop-js-dom/)
+-   [GorskiAnthony/tp-todo](https://github.com/GorskiAnthony/tp-todo)
 
 ## Saison 1
 
@@ -121,25 +220,25 @@ _Comment faire une bonne démo_ voilà le thème abordé aujourd'hui.
 
 Nous avons vu ce qu'il fallait faire et ne pas faire lors d'une démo. ⬇️
 
-- [x] N’attendez pas la dernière minute
-- [x] Soyez clair et concis
-- [x] Appuyez-vous sur votre support
-- [x] Adaptez-vous à votre interlocuteur
-- [x] Préparez la répartition de la parole
-- [x] Anticipez les questions / réponses
-- [x] Entraînez-vous !!!!!
+-   [x] N’attendez pas la dernière minute
+-   [x] Soyez clair et concis
+-   [x] Appuyez-vous sur votre support
+-   [x] Adaptez-vous à votre interlocuteur
+-   [x] Préparez la répartition de la parole
+-   [x] Anticipez les questions / réponses
+-   [x] Entraînez-vous !!!!!
 
 Nous commençons aussi les press reviews.
 Chaque semaine, vous devez parler d'un sujet en relation avec le dev'.
 
-- Un fait d'actualité
-- Un nouvel outil
-- Un framework
-- Etc.
+-   Un fait d'actualité
+-   Un nouvel outil
+-   Un framework
+-   Etc.
 
 :link: _Liens utiles_
 
-- [Onboarding [FR] - How to do a good demo](https://docs.google.com/presentation/d/1ZaYBN_BnKqAhBKcG_FMNP3coTk_nVaEaS7qPf3Dq12U/edit#slide=id.p1)
+-   [Onboarding [FR] - How to do a good demo](https://docs.google.com/presentation/d/1ZaYBN_BnKqAhBKcG_FMNP3coTk_nVaEaS7qPf3Dq12U/edit#slide=id.p1)
 
 ### :calendar: 07/03/2024
 
@@ -153,25 +252,25 @@ Pour rappel :
 
 :link: _Liens utiles_
 
-- [UX/UI [FR] - Website conception](https://docs.google.com/presentation/d/1cMJyttPWY6dyjU3bPfMU1VVeP-yQQzK0LHRL1CR1IjU/edit#slide=id.p)
-- [UX/UI [FR] - Web design](https://docs.google.com/presentation/d/1EqV-WMtcyuntKUYJnZC7G9N49gnrZvjvGvcZr9BOfPw/edit#slide=id.p)
+-   [UX/UI [FR] - Website conception](https://docs.google.com/presentation/d/1cMJyttPWY6dyjU3bPfMU1VVeP-yQQzK0LHRL1CR1IjU/edit#slide=id.p)
+-   [UX/UI [FR] - Web design](https://docs.google.com/presentation/d/1EqV-WMtcyuntKUYJnZC7G9N49gnrZvjvGvcZr9BOfPw/edit#slide=id.p)
 
 ---
 
-- [Analyse et vérification du contraste | Adobe Color](https://color.adobe.com/fr/create/color-contrast-analyzer)
-- [User Inyerface - A worst-practice UI experiment](https://userinyerface.com/)
+-   [Analyse et vérification du contraste | Adobe Color](https://color.adobe.com/fr/create/color-contrast-analyzer)
+-   [User Inyerface - A worst-practice UI experiment](https://userinyerface.com/)
 
 ---
 
 Merci à [Fanny](https://github.com/fanny-pretre) pour les liens suivants :
 
-- [Définition de la Loi de Fitts, son rôle dans l'expérience utilisateur (UX)](https://www.usabilis.com/definition-loi-de-fitts/)
-- [color.adobe.com/fr/trends](https://color.adobe.com/fr/trends)
-- [Les lois de la Gestalt appliquées au Design | bluedrop.fr, Agence web Drupal - Usinons Drupal](https://www.bluedrop.fr/content/les-lois-de-la-gestalt-appliqu%C3%A9es-au-design#:~:text=Cette%20th%C3%A9orie%20cherche%20%C3%A0%20expliquer,une%20vision%20globale%20des%20choses)
+-   [Définition de la Loi de Fitts, son rôle dans l'expérience utilisateur (UX)](https://www.usabilis.com/definition-loi-de-fitts/)
+-   [color.adobe.com/fr/trends](https://color.adobe.com/fr/trends)
+-   [Les lois de la Gestalt appliquées au Design | bluedrop.fr, Agence web Drupal - Usinons Drupal](https://www.bluedrop.fr/content/les-lois-de-la-gestalt-appliqu%C3%A9es-au-design#:~:text=Cette%20th%C3%A9orie%20cherche%20%C3%A0%20expliquer,une%20vision%20globale%20des%20choses)
 
 ---
 
-- [WAVE Evaluation Tool](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
+-   [WAVE Evaluation Tool](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
 
 ### :calendar: 06/03/2024
 
@@ -219,17 +318,17 @@ Ensuite, à vous l'atelier git & github !
 
 :link: _Liens utiles_
 
-- [Git / GitHub [FR] - Intro](https://docs.google.com/presentation/d/1e4G26qbY_5vGG0l9w05TCuIv_Kkw-bxFeZ4Q1hc6xFs/edit#slide=id.p)
+-   [Git / GitHub [FR] - Intro](https://docs.google.com/presentation/d/1e4G26qbY_5vGG0l9w05TCuIv_Kkw-bxFeZ4Q1hc6xFs/edit#slide=id.p)
 
 ---
 
-- [WorkShop Chip & Dale](https://wildcodeschool.github.io/workshop-git/README-FR)
+-   [WorkShop Chip & Dale](https://wildcodeschool.github.io/workshop-git/README-FR)
 
 ---
 
-- [SSH Key & Git by Antho](./assets/GIT.pdf)
-- [Apprendre Git](https://learngitbranching.js.org/?locale=fr_FR)
-- [Simple Git Workflow | Wild code school](https://wildcodeschool.github.io/workflow-project-1/README-FR)
+-   [SSH Key & Git by Antho](./assets/GIT.pdf)
+-   [Apprendre Git](https://learngitbranching.js.org/?locale=fr_FR)
+-   [Simple Git Workflow | Wild code school](https://wildcodeschool.github.io/workflow-project-1/README-FR)
 
 ### :calendar: 05/03/2024
 
@@ -243,12 +342,12 @@ Alors, oui, c'est assez dur, il y a plein de choses à connaître, mais en vrai.
 
 Les éléments communs pour tout le monde :
 
-- Les variables
-- Les conditions
-- Les tableaux
-- Les boucles
-- Les fonctions
-- 🎁 les 6 falsy values
+-   Les variables
+-   Les conditions
+-   Les tableaux
+-   Les boucles
+-   Les fonctions
+-   🎁 les 6 falsy values
 
 #### Les variables
 
@@ -276,19 +375,19 @@ Il existe plusieurs types de données :
 
 Les primitifs :
 
-- `string` : chaîne de caractères
-- `number` : nombre
-- `boolean` : vrai ou faux
-- `null` : nul
-- `undefined` : non défini
-- ...
+-   `string` : chaîne de caractères
+-   `number` : nombre
+-   `boolean` : vrai ou faux
+-   `null` : nul
+-   `undefined` : non défini
+-   ...
 
 Les non primitifs :
 
-- `object` : objet
-- `array` : tableau
-- `function` : fonction
-- ...
+-   `object` : objet
+-   `array` : tableau
+-   `function` : fonction
+-   ...
 
 #### Les opérateurs
 
@@ -306,10 +405,10 @@ let monTableau = [2, "Hello", true, ["coucou"]];
 
 Il existent plusieurs méthodes pour manipuler les tableaux :
 
-- `push()` : ajoute un élément à la fin du tableau
-- `pop()` : supprime le dernier élément du tableau
-- `shift()` : supprime le premier élément du tableau
-- `unshift()` : ajoute un élément au début du tableau
+-   `push()` : ajoute un élément à la fin du tableau
+-   `pop()` : supprime le dernier élément du tableau
+-   `shift()` : supprime le premier élément du tableau
+-   `unshift()` : ajoute un élément au début du tableau
 
 #### Les conditions
 
@@ -320,11 +419,11 @@ L'architecture d'un `if/else`:
 ```js
 // Une condition doit obligatoirement se répondre par true ou false
 if (condition) {
-  // code
+	// code
 } else if (condition) {
-  // code
+	// code
 } else {
-  // code
+	// code
 }
 ```
 
@@ -334,9 +433,9 @@ Ex:
 let maVariable = "Bouh";
 
 if (maVariable === "Hello World !") {
-  console.log("C'est cool !");
+	console.log("C'est cool !");
 } else {
-  console.log("C'est pas cool !");
+	console.log("C'est pas cool !");
 }
 ```
 
@@ -348,9 +447,9 @@ Si votre condition est un booléen (`true` ou `false`), vous pouvez faire comme 
 let maVariable = true;
 
 if (maVariable) {
-  console.log("C'est cool !");
+	console.log("C'est cool !");
 } else {
-  console.log("C'est pas cool !");
+	console.log("C'est pas cool !");
 }
 ```
 
@@ -358,9 +457,9 @@ Ou encore :
 
 ```js
 if (!maVariable) {
-  console.log("C'est pas cool !");
+	console.log("C'est pas cool !");
 } else {
-  console.log("C'est cool !");
+	console.log("C'est cool !");
 }
 ```
 
@@ -370,15 +469,15 @@ Les boucles permettent de répéter une action.
 
 Il y a 3 informations importantes :
 
-- L'initialisation
-- La condition d'arrêt
-- L'incrémentation
+-   L'initialisation
+-   La condition d'arrêt
+-   L'incrémentation
 
 `Boucle for`:
 
 ```js
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+	console.log(i);
 }
 ```
 
@@ -388,9 +487,9 @@ for (let i = 0; i < 10; i++) {
 let i = 0;
 
 while (condition) {
-  // code
+	// code
 
-  i++;
+	i++;
 }
 ```
 
@@ -398,8 +497,8 @@ while (condition) {
 let i = 0;
 
 do {
-  // code
-  i++;
+	// code
+	i++;
 } while (condition);
 ```
 
@@ -413,14 +512,14 @@ La syntaxe :
 
 ![fonction](assets/syntaxe.png)
 
-- `function` : mot clé pour déclarer une fonction
-- `maFonction` : nom de la fonction
-- `()` : les paramètres
-- `{}` : le corps de la fonction
+-   `function` : mot clé pour déclarer une fonction
+-   `maFonction` : nom de la fonction
+-   `()` : les paramètres
+-   `{}` : le corps de la fonction
 
 ```js
 function maFonction() {
-  console.log("Hello World !");
+	console.log("Hello World !");
 }
 
 /* réutilisation de la fonction maFonction */
@@ -435,7 +534,7 @@ Il faut que la fonction retourne (`return`) une valeur.
 
 ```js
 function maFonction() {
-  return "Hello World !";
+	return "Hello World !";
 }
 ```
 
@@ -451,34 +550,34 @@ let maVariable = maFonction();
 ```js
 // ma variable students qui est un tableau d'étudiants
 const students = [
-  "Aurélien",
-  "Mohamed",
-  "Laurent",
-  "Frank",
-  "Kelly",
-  "Fanny",
-  "Amandine",
-  "Vincent",
-  "David",
-  "Baptiste",
-  "Sacha",
-  "Nicolas",
-  "Kylian",
-  "Fab",
-  "Jeviraj",
-  "Simon",
+	"Aurélien",
+	"Mohamed",
+	"Laurent",
+	"Frank",
+	"Kelly",
+	"Fanny",
+	"Amandine",
+	"Vincent",
+	"David",
+	"Baptiste",
+	"Sacha",
+	"Nicolas",
+	"Kylian",
+	"Fab",
+	"Jeviraj",
+	"Simon",
 ];
 
 // une fonction sayHello qui prend 1 paramètre `name`
 function sayHello(name) {
-  console.log("Coucou " + name + " 👋");
+	console.log("Coucou " + name + " 👋");
 }
 
 // Une boucle for qui commence à 0 jusqu'à la taille du tableau
 for (let i = 0; i < students.length; i += 1) {
-  // utilisation de la fonction sayHello qui prend un argument
-  // students[i] qui vaut le prénom de mon tableau "students" à l'index `i`
-  sayHello(students[i]);
+	// utilisation de la fonction sayHello qui prend un argument
+	// students[i] qui vaut le prénom de mon tableau "students" à l'index `i`
+	sayHello(students[i]);
 }
 ```
 
@@ -488,19 +587,19 @@ for (let i = 0; i < students.length; i += 1) {
 
 Les 6 falsy values sont des valeurs qui sont évaluées à `false` dans une condition.
 
-- `false`
-- `0`
-- `""`
-- `null`
-- `undefined`
-- `NaN`
+-   `false`
+-   `0`
+-   `""`
+-   `null`
+-   `undefined`
+-   `NaN`
 
 Si vous voulez en savoir plus, voici un article qui en parle : [Les 6 falsy values](https://developer.mozilla.org/fr/docs/Glossaire/Falsy)
 
 :link: _Liens utiles_
 
-- [Programming Basics [FR]](https://docs.google.com/presentation/d/1OBivzxzUzk8J5-L93OMpW0ObVeInsFYmmluh9J0UeBE/edit)
-- [Programming Basics | Wild code school](https://wildcodeschool.github.io/workshop-programming-basics/)
+-   [Programming Basics [FR]](https://docs.google.com/presentation/d/1OBivzxzUzk8J5-L93OMpW0ObVeInsFYmmluh9J0UeBE/edit)
+-   [Programming Basics | Wild code school](https://wildcodeschool.github.io/workshop-programming-basics/)
 
 ### :calendar: 01/03/2024
 
@@ -521,9 +620,9 @@ Internet est un réseau informatique mondial accessible au public. Il permet de 
 
 **Protocoles**
 
-- HTTP(S) : Hypertext Transfer Protocol (Secure)
-- FTP : File Transfer Protocol
-- etc.
+-   HTTP(S) : Hypertext Transfer Protocol (Secure)
+-   FTP : File Transfer Protocol
+-   etc.
 
 **Navigateur**
 
@@ -533,9 +632,9 @@ Un navigateur web est un logiciel permettant de consulter des pages web. Les plu
 
 Une URL (Uniform Resource Locator) est une adresse web. Elle est composée de plusieurs éléments :
 
-- Protocole : `http://` ou `https://`
-- Nom de domaine : `www.google.com`
-- Chemin : `/search?q=hello+world`
+-   Protocole : `http://` ou `https://`
+-   Nom de domaine : `www.google.com`
+-   Chemin : `/search?q=hello+world`
 
 ### Bonus
 
@@ -543,7 +642,7 @@ Une URL (Uniform Resource Locator) est une adresse web. Elle est composée de pl
 
 :link: _Liens utiles_
 
-- [Web [FR] - Web Basics](https://docs.google.com/presentation/d/1fDH6eD-udpIGQ8b_LF2CLQCJwN94Bj_h33K4MmD6xMo/edit#slide=id.p)
+-   [Web [FR] - Web Basics](https://docs.google.com/presentation/d/1fDH6eD-udpIGQ8b_LF2CLQCJwN94Bj_h33K4MmD6xMo/edit#slide=id.p)
 
 ### :calendar: 29/02/2024
 
@@ -582,12 +681,12 @@ Bien sûr, il y a beaucoup plus de commandes, mais ce sont les bases pour commen
 
 :link: _Liens utiles_
 
-- [Web [FR] - Terminal](https://docs.google.com/presentation/d/1LWyNTqUL8qsP2bRF5a9V--iGav9wt2Q2b08on67Coz8/edit#slide=id.p)
+-   [Web [FR] - Terminal](https://docs.google.com/presentation/d/1LWyNTqUL8qsP2bRF5a9V--iGav9wt2Q2b08on67Coz8/edit#slide=id.p)
 
 ---
 
-- [Voyage au centre de l’ordinateur | Wild code school](https://wildcodeschool.github.io/workshop-terminal/README-FR#conna%C3%AEtre-ses-racines)
-- [Exo console](https://www.notion.so/anthony-gorski/Console-bf80d102e2dd4a039a4a8f752cce619e)
+-   [Voyage au centre de l’ordinateur | Wild code school](https://wildcodeschool.github.io/workshop-terminal/README-FR#conna%C3%AEtre-ses-racines)
+-   [Exo console](https://www.notion.so/anthony-gorski/Console-bf80d102e2dd4a039a4a8f752cce619e)
 
 ### :calendar: 28/02/2024
 
@@ -609,13 +708,13 @@ Voilà un petit récap des breakpoints (points de rupture) les plus utilisés :
 
 :link: _Liens utiles_
 
-- [CSS [FR] - Responsive Web Design](https://docs.google.com/presentation/d/1Uk_vi8dYmhXGHFg32Bdd-8PSTNGaqF_EibH_Lum6-bI/edit)
+-   [CSS [FR] - Responsive Web Design](https://docs.google.com/presentation/d/1Uk_vi8dYmhXGHFg32Bdd-8PSTNGaqF_EibH_Lum6-bI/edit)
 
 ---
 
-- [Am I Responsive?](https://ui.dev/amiresponsive?url=https://www.wildcodeschool.com/fr-fr/)
-- [Interactive CSS Grid Generator | Layoutit Grid](https://grid.layoutit.com/)
-- [:root - CSS : Feuilles de style en cascade | MDN](https://developer.mozilla.org/fr/docs/Web/CSS/:root)
+-   [Am I Responsive?](https://ui.dev/amiresponsive?url=https://www.wildcodeschool.com/fr-fr/)
+-   [Interactive CSS Grid Generator | Layoutit Grid](https://grid.layoutit.com/)
+-   [:root - CSS : Feuilles de style en cascade | MDN](https://developer.mozilla.org/fr/docs/Web/CSS/:root)
 
 ### :calendar: 27/02/2024
 
@@ -627,37 +726,37 @@ Je vous rassure, il n'est pas nécessaire de tout retenir, mais il est important
 
 ### 💡Ce qu'il faut retenir
 
-- HTML : c'est la structure de la page web
-- CSS : c'est la mise en forme de la page web
-- Les balises HTML sont des éléments de structure
-  - `<h1></h1>` : titre de niveau 1
-  - `<p></p>` : paragraphe
-  - `<a></a>` : lien
-  - `<img />` : image
-  - etc.
-- Les sélecteurs CSS permettent de cibler des éléments HTML
-  - `h1` : cible tous les titres de niveau 1
-  - `.ma__classe` : cible tous les éléments ayant la classe `class="ma__classe"`
-  - `#mon__id` : cible l'élément ayant l'id `id="mon__id"`
+-   HTML : c'est la structure de la page web
+-   CSS : c'est la mise en forme de la page web
+-   Les balises HTML sont des éléments de structure
+    -   `<h1></h1>` : titre de niveau 1
+    -   `<p></p>` : paragraphe
+    -   `<a></a>` : lien
+    -   `<img />` : image
+    -   etc.
+-   Les sélecteurs CSS permettent de cibler des éléments HTML
+    -   `h1` : cible tous les titres de niveau 1
+    -   `.ma__classe` : cible tous les éléments ayant la classe `class="ma__classe"`
+    -   `#mon__id` : cible l'élément ayant l'id `id="mon__id"`
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Titre de la page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <h1>Titre de la page</h1>
-    <p>Un paragraphe</p>
-  </body>
+	<head>
+		<title>Titre de la page</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<h1>Titre de la page</h1>
+		<p>Un paragraphe</p>
+	</body>
 </html>
 ```
 
 ```css
 h1 {
-  color: blue;
-  font-size: 12px;
+	color: blue;
+	font-size: 12px;
 }
 ```
 
@@ -666,23 +765,23 @@ L'anglais est un atout pour la programmation, car la majorité des ressources so
 
 :link: _Liens utiles_
 
-- [HTML [FR] - Basics](https://docs.google.com/presentation/d/1N-yUZcQfiuh8nInZXnB5D5uTaua9Tp4IYMk98IJ_yuY/edit#slide=id.p)
-- [CSS [FR] - Basics](https://docs.google.com/presentation/d/1-t0tqyjMs-FwVG723MSuzYAoKEra8LSZ-sRxADr1F64/edit#slide=id.p)
+-   [HTML [FR] - Basics](https://docs.google.com/presentation/d/1N-yUZcQfiuh8nInZXnB5D5uTaua9Tp4IYMk98IJ_yuY/edit#slide=id.p)
+-   [CSS [FR] - Basics](https://docs.google.com/presentation/d/1-t0tqyjMs-FwVG723MSuzYAoKEra8LSZ-sRxADr1F64/edit#slide=id.p)
 
 ---
 
-- [W3Schools Online Web Tutorials](https://www.w3schools.com/)
-- [HTML Reference](https://www.w3schools.com/tags/default.asp)
-- [CSS Reference](https://www.w3schools.com/cssref/index.php)
-- [Méthodologie BEM pour le CSS](https://alticreation.com/bem-pour-le-css/)
+-   [W3Schools Online Web Tutorials](https://www.w3schools.com/)
+-   [HTML Reference](https://www.w3schools.com/tags/default.asp)
+-   [CSS Reference](https://www.w3schools.com/cssref/index.php)
+-   [Méthodologie BEM pour le CSS](https://alticreation.com/bem-pour-le-css/)
 
 ---
 
-- [Flexbox Froggy - Un jeu pour apprendre les flexbox CSS](https://flexboxfroggy.com/#fr)
-- [Grid Garden - Un jeu pour apprendre les grid CSS](https://cssgridgarden.com/#fr)
-- [CSS Diner - Un jeu pour apprendre les sélecteurs CSS](https://flukeout.github.io/)
-- [CSS Battle - Un jeu pour apprendre le CSS](https://cssbattle.dev/)
-- [Codepen - Un site pour partager du code HTML/CSS/JS](https://codepen.io/)
+-   [Flexbox Froggy - Un jeu pour apprendre les flexbox CSS](https://flexboxfroggy.com/#fr)
+-   [Grid Garden - Un jeu pour apprendre les grid CSS](https://cssgridgarden.com/#fr)
+-   [CSS Diner - Un jeu pour apprendre les sélecteurs CSS](https://flukeout.github.io/)
+-   [CSS Battle - Un jeu pour apprendre le CSS](https://cssbattle.dev/)
+-   [Codepen - Un site pour partager du code HTML/CSS/JS](https://codepen.io/)
 
 ### :calendar: 26/02/2024
 
@@ -696,5 +795,5 @@ Vous avez même eu le mot du CEO de la Wild Code School !
 
 :link: _Liens utiles_
 
-- [2024 - Programme des prochains mois](https://docs.google.com/presentation/d/1ppBPDll3PK0LSY3AFHG_zzGX5GoIEg-rARVEWTH9yKM/edit#slide=id.g210c0f5cbca_0_0)
-- [FR. 2024 Méthodes d'enseigement](https://docs.google.com/presentation/d/1-TWa72u96FVZxeBPs_FwLJIwy8M7JuNd9PBrbO6DpCU/edit#slide=id.p1)
+-   [2024 - Programme des prochains mois](https://docs.google.com/presentation/d/1ppBPDll3PK0LSY3AFHG_zzGX5GoIEg-rARVEWTH9yKM/edit#slide=id.g210c0f5cbca_0_0)
+-   [FR. 2024 Méthodes d'enseigement](https://docs.google.com/presentation/d/1-TWa72u96FVZxeBPs_FwLJIwy8M7JuNd9PBrbO6DpCU/edit#slide=id.p1)
