@@ -16,6 +16,72 @@
 
 ## Saison 2
 
+### :calendar: 19/03/2024
+
+:package: _Récap du jour_
+
+Node.js, c'est quoi ? C'est un environnement d'exécution JavaScript côté serveur.
+
+Node.js est basé sur le moteur JavaScript V8 de Chrome.
+
+#### Comment ça marche ?
+
+Pour utiliser Node.js, il faut installer Node.js sur votre machine => [Node.js](https://nodejs.org/en/)
+
+Ensuite, vous pouvez écrire du code JavaScript dans un fichier `.js` et l'exécuter avec Node.js.
+
+```shell
+$ node
+> console.log("Hello World !");
+```
+
+Pas terrible comme utilisation, du coup, nous allons utiliser plutôt un fichier.
+
+```js
+// index.js
+console.log("Hello World !");
+```
+
+```shell
+$ node index.js
+# output
+Hello World !
+```
+
+### NPM
+
+[NPM](https://www.npmjs.com/) (Node Package Manager) est un gestionnaire de paquets pour Node.js.
+
+Il permet d'installer des paquets (bibliothèques) pour Node.js.
+
+```shell
+$ npm install chalk@4.1.2
+```
+
+Détail de la commande :
+
+-   `npm` : le gestionnaire de paquets
+-   `install` : commande pour installer un paquet
+-   `chalk` : le nom du paquet
+-   `@4.1.2` : la version du paquet
+
+Je prend la version 4.1.2 de chalk car la version 5 ou plus utilise ESM (ECMAScript Modules) et je ne veux pas vous embrouiller avec ça.
+
+```js
+// index.js
+const chalk = require("chalk");
+
+console.log(chalk.blue("Hello World !"));
+```
+
+:link: _Liens utiles_
+
+-   [JS [FR] - What is Node?](https://docs.google.com/presentation/d/1ngtYXEY8nngkFq-SOg97Hq-wK7x-1OUKpm78ZLBZO7A/edit)
+-   [Node.js](https://nodejs.org/en)
+-   [npm | Home](https://www.npmjs.com/)
+
+---
+
 ### :calendar: 14/03/2024
 
 **Partie 2 / 2**
