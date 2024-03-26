@@ -69,6 +69,7 @@ Le cours viendra plus tard, car il est assez long et je ne veux pas vous spoiler
 
 -   [Workshop React](./assets/workshop1.png)
 -   [JS-RemoteFR-CrewDragon-HtmlToReact](https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-HtmlToReact)
+-   [React Developer Tools – React](https://react.dev/learn/react-developer-tools)
 
 ---
 
