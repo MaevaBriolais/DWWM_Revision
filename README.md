@@ -14,7 +14,65 @@
 
 ---
 
-## Saison 2
+## Saison 3️⃣
+
+### :calendar: 26/03/2024
+
+:package: _Récap du jour_
+
+![dance](https://media.giphy.com/media/wAxlCmeX1ri1y/giphy.gif?cid=ecf05e47xatcijrvxgr5b1qfiy80uxfjga683vp0mixu3nuu&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+**REACT 👏👏👏**
+
+**REACT 👏👏👏**
+
+**REACT 👏👏👏**
+
+Et oui, nous entamons la partie React de notre formation.
+
+Alors qu'avons-nous vu aujourd'hui ?
+
+### 💡Ce qu'il faut retenir
+
+#### C'est quoi React ?
+
+React est une **bibliothèque** JavaScript pour la construction d'interfaces utilisateur.
+
+#### Pourquoi React ?
+
+-   **Facile à apprendre** : React est facile à apprendre, surtout si vous avez des connaissances en HTML, CSS et JavaScript.
+-   **Réutilisable** : React vous permet de créer des composants réutilisables.
+-   **Performant** : React utilise une technique appelée DOM virtuel qui améliore les performances de l'application.
+
+#### JSX
+
+JSX est une extension de la syntaxe JavaScript qui permet d'écrire du HTML dans du JavaScript.
+Alors le JSX ça ressemble à l'html, à l'odeur, à la couleur, mais ce n'est pas de l'html.
+
+```js
+const element = <h1>Hello, world!</h1>;
+```
+
+#### Les composants
+
+Les composants sont les éléments de base de React. Ils permettent de diviser l'interface utilisateur en morceaux indépendants et réutilisables.
+
+```js
+function Welcome() {
+	return <h1>Hello world!</h1>;
+}
+```
+
+:link: _Liens utiles_
+
+Le cours viendra plus tard, car il est assez long et je ne veux pas vous spoiler. 😎
+
+-   [Workshop React](./assets/workshop1.png)
+-   [JS-RemoteFR-CrewDragon-HtmlToReact](https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-HtmlToReact)
+
+---
+
+## Saison 2️⃣
 
 ### :calendar: 19/03/2024
 
