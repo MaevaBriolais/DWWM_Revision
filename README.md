@@ -6,15 +6,114 @@
 >
 > Drives des dossiers communs & privés
 
-|                                Lien Drive / Utiles                                 |
-| :--------------------------------------------------------------------------------: |
-| [Commun](https://drive.google.com/drive/folders/1wejsBzAh7XXAs3vILtkEtySmOM_eji-B) |
-| [Privé](https://drive.google.com/drive/folders/1aKS-GDpFbZ3I-WOsLD7jLKwvS0Efvvuq)  |
-|      [Wild Code School Workshop](https://wildcodeshool-workshop.netlify.app/)      |
+|                                  Lien Drive / Utiles                                   |
+| :------------------------------------------------------------------------------------: |
+|   [Commun](https://drive.google.com/drive/folders/1wejsBzAh7XXAs3vILtkEtySmOM_eji-B)   |
+|   [Privé](https://drive.google.com/drive/folders/1aKS-GDpFbZ3I-WOsLD7jLKwvS0Efvvuq)    |
+|        [Wild Code School Workshop](https://wildcodeshool-workshop.netlify.app/)        |
+| [Remote-projects-demo](https://github.com/WildCodeSchool-2024-02/Remote-projects-demo) |
 
 ---
 
 ## Saison 3️⃣
+
+### :calendar: 27/03/2024
+
+:package: _Récap du jour_
+
+On continue sur notre lancée avec React.
+
+Nous avons appréhendé les props.
+
+### 💡Ce qu'il faut retenir
+
+#### Les props
+
+![props](./assets//props.png)
+
+Les props sont des arguments passés à un composant React.
+
+On passe **TOUJOURS** les props de parent à enfant.
+
+```js
+// src/App.js
+import Welcome from "./components/Welcome";
+
+function App() {
+	return (
+		<div>
+			<Welcome name="Hermione" />
+			<Welcome name="Ron" />
+			<Welcome name="Harry" />
+		</div>
+	);
+}
+```
+
+Props est un objet qui contient les propriétés passées à un composant.
+
+```js
+// src/components/Welcome.js
+function Welcome(props) {
+	console.log(props);
+	/* ex: { name: "Hermione" }  */
+	return <h1>Hello, {props.name}</h1>;
+}
+```
+
+### Pour brillé en société
+
+#### La destructuration
+
+La destructuration permet de récupérer une valeur d'un objet ou d'un tableau.
+
+Dans notre exemple, voilà comment on peut faire :
+
+```jsx
+// src/components/User.jsx
+
+function User(props) {
+	const { firstname } = props;
+	return (
+		<div>
+			<h1>{firstname}</h1>
+		</div>
+	);
+}
+
+// OU cette façon qui est plus utilisée
+
+function User({ firstname }) {
+	return (
+		<div>
+			<h1>{firstname}</h1>
+		</div>
+	);
+}
+```
+
+### Rappel
+
+Les retours implicites en JS
+
+```js
+// return implicite
+const sum = (a, b) => a + b;
+
+// syntaxe classique
+const multiply = (a, b) => {
+	return a * b;
+};
+
+console.log(sum(5, 7));
+console.log(multiply(2, 2));
+```
+
+:link: _Liens utiles_
+
+-   [Workshop React](./assets/workshop2.png)
+
+---
 
 ### :calendar: 26/03/2024
 
