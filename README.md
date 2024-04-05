@@ -17,6 +17,78 @@
 
 ## Saison 3️⃣
 
+### :calendar: 05/04/2024
+
+:package: _Récap du jour_
+
+Nous allons pas écrire grand chose pour ce jour car ce n'est pas une généralité mais quand même, nous allons parler du workflow git de la Wild.
+
+#### Le workflow git de la Wild
+
+Nous allons avoir 3 branches disctinctes :
+
+-   [x] `main 🔐` : c'est la branche qui contient le code de production, c'est à dire le code qui est en ligne.
+
+-   [x] `dev 🔐` : c'est la branche qui contient le code de développement, c'est à dire le code qui est en cours de développement.
+
+-   [x] `features` : c'est la branche qui contient le code de la feature que vous êtes en train de développer.
+
+#### Nommage des branches
+
+Nous vous conseillons d'appeler vos branches de la manière suivante :
+
+-   `<N° du sprint><N° de l'US>_<Ma feature>`
+
+Ex :
+
+-   `S01US01_navbar`
+-   `S02US12_contact_form`
+
+#### Quand je suis content, je commit
+
+Nous vous conseillons de faire un commit à chaque fois que vous avez fini une tâches technique.
+
+-   [x] HTML
+-   [x] Style
+-   [x] Validation
+
+Par exemple.
+
+#### Les labels
+
+Nous vous quelques labels pour définir l'état de votre US.
+
+-   REVIEWED
+-   CHANGES REQUESTED
+-   CORRECTIONS DONE
+-   CONFLICTS
+-   CONFLICTS RESOLVED
+
+:link: _Liens utiles_
+
+-   [Git / GitHub [FR] - Git Workflow](https://docs.google.com/presentation/d/1PTOk3AvxB2y3VbupsjRk0fNrZwhuczkC--tc7pN4nq0/edit#slide=id.g21e144eb45e_0_611)
+
+---
+
+### :calendar: 04/04/2024
+
+Nous avons fait un petit cours sur la méthodologie Agile avec le framwork Scrum.
+
+Nous n'allons pas faire un gros récap, car le cours est assez long.
+
+Regardé le cours, et si vous avez des questions, n'hésitez pas. (J'ai aussi mis un lien vers mon cours sur github)
+
+:package: _Récap du jour_
+
+![agile](./assets/agile.png)
+
+:link: _Liens utiles_
+
+-   [SCRUM [FR] - Agile Methodology & SCRUM](https://docs.google.com/presentation/d/18g-SYdgsxzNdLvIV9wfBDl9key2rPCQfOPn_1hpmOmI/edit)
+-   [GorskiAnthony/CoursAgiles](https://github.com/GorskiAnthony/CoursAgiles)
+
+---
+
 ### :calendar: 27/03/2024
 
 :package: _Récap du jour_
@@ -30,6 +102,8 @@ Nous avons appréhendé les props.
 #### Les props
 
 ![props](./assets//props.png)
+
+![props2](./assets/props_img.png)
 
 Les props sont des arguments passés à un composant React.
 
