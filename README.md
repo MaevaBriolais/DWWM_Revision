@@ -76,6 +76,10 @@ Nous avons fait un petit cours sur la méthodologie Agile avec le framwork Scrum
 
 Nous n'allons pas faire un gros récap, car le cours est assez long.
 
+Mais en gros, pourquoi choisir la méthodologie Agile dans un projet ?
+
+![what-is-the-difference-between-agile-and-waterfall-model.png (750×500)](https://codetiburon.com/app/uploads/2017/02/what-is-the-difference-between-agile-and-waterfall-model.png)
+
 Regardé le cours, et si vous avez des questions, n'hésitez pas. (J'ai aussi mis un lien vers mon cours sur github)
 
 :package: _Récap du jour_
