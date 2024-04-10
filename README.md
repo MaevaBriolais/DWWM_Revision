@@ -17,6 +17,104 @@
 
 ## Saison 3️⃣
 
+### :calendar: 09/04/2024
+
+:package: _Récap du jour_
+
+Les API ! C'est cool ! Mais c'est quoi une API ?
+
+#### C'est quoi une API ?
+
+Une API (Application Programming Interface) est un ensemble de règles et de protocoles qui permettent à des logiciels de communiquer entre eux.
+
+#### Les types d'API
+
+Il existe plusieurs types d'API :
+
+-   API REST
+-   API SOAP
+-   API GraphQL
+-   ...
+
+Nous allons nous concentrer sur les API REST ✨ !
+
+API REST pour `Representational State Transfer` est un style d'architecture qui définit un ensemble de contraintes pour la création de services web.
+
+![rest](./assets/api_rest.png)
+
+#### Les méthodes HTTP
+
+Les méthodes HTTP sont des verbes qui permettent de définir l'action à effectuer sur une ressource. Il y a une méthode pour chaque action.
+
+| Méthode HTTP | Action   | Description                   |
+| ------------ | -------- | ----------------------------- |
+| POST         | `C`REATE | Créer une entrée              |
+| GET          | `R`EAD   | Récupérer une information     |
+| PUT          | `U`PDATE | Mettre à jour une information |
+| DELETE       | `D`ELETE | Supprimer un élément          |
+
+#### Les codes de statut HTTP
+
+Les codes de statut HTTP sont des codes numériques qui indiquent le résultat d'une requête HTTP. Il y a pleins de catégories de codes :
+
+-   `1xx` : Information
+-   `2xx` : Succès
+-   `3xx` : Redirection
+-   `4xx` : Erreur client
+-   `5xx` : Erreur serveur
+
+#### Consommer une API en JS
+
+Pour `consommer` une API en JS, il faut utiliser la méthode `fetch()`.
+
+```js
+fetch("https://api.exemple.com")
+	.then((response) => response.json())
+	.then((data) => console.log(data));
+```
+
+#### Créer une API en JS
+
+Pour créer une API en JS, on va utiliser `express` qui est un framework pour Node.js.
+
+```js
+const express = require("express");
+const app = express();
+
+const things = [
+	{ id: 1, name: "thing1" },
+	{ id: 2, name: "thing2" },
+	{ id: 3, name: "thing3" },
+];
+
+// Route pour récupérer les choses
+app.get("/api", (req, res) => {
+	res.json(things);
+});
+```
+
+Ici, nous avons une API qui retourne un tableau d'objets.
+
+#### JSON
+
+Le JSON (JavaScript Object Notation) est un format de données textuelles qui est facile à lire et à écrire pour les humains.
+
+```json
+{
+	"key": "value",
+	"key2": "value2"
+}
+```
+
+:link: _Liens utiles_
+
+-   [JS [FR] - API & fetch](https://docs.google.com/presentation/d/1WE8ZjzOgp8FZxVkXV2Risl5PR-vlm_PGfH7Tk020ZwI/edit#slide=id.p)
+-   [Express [FR] - API & express](https://docs.google.com/presentation/d/1OEwzuMFD91XF04rLOjP1iIWt3a1qG2h5Ppa6Q3ZXZZs/edit#slide=id.p)
+-   [API-Express](https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-API-Express)
+-   [API REST : définition](https://www.redhat.com/fr/topics/api/what-is-a-rest-api#rest)
+
+---
+
 ### :calendar: 05/04/2024
 
 :package: _Récap du jour_
