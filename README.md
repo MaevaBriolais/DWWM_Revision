@@ -17,6 +17,201 @@
 
 ## Saison 3️⃣
 
+### :calendar: 15/04/2024
+
+:package: _Récap du jour_
+
+Ce matin, il y avait un atelier sur `react-router-dom`.
+
+Il y a beaucoup de texte, mais dans tout ça, il faut retenir que `react-router-dom` est une librairie qui permet de gérer la navigation dans une application React.
+
+#### Installation
+
+Pour installer `react-router-dom`, il faut taper la commande suivante :
+
+```shell
+$ npm install react-router-dom
+```
+
+#### Les instructions d'importation
+
+-   `createBrowserRouter` : permet de créer un contexte de navigation, il contient toute la logique de navigation.
+-   `Link` : permet de créer un lien vers une autre page. (Celle ci ne recharge pas la page)
+-   `RouterProvider` : permet de fournir le contexte de navigation à l'application.
+-
+
+```jsx
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+	{
+		// le chemin de l'URL, ici `/`
+		path: "/",
+		element: (
+			<>
+				<nav>
+					<Link to="/">Home</Link>
+					<Link to="/about">About</Link>
+				</nav>
+				<main>
+					// le composant à afficher, bien sûr, il faut l'importer
+					<Home />
+				</main>
+			</>
+		),
+	},
+	{
+		// le chemin de l'URL, ici `/about`
+		path: "/about",
+		element: (
+			<>
+				<nav>
+					<Link to="/">Home</Link>
+					<Link to="/about">About</Link>
+				</nav>
+				<main>
+					// le composant à afficher, bien sûr, il faut l'importer
+					<About />
+				</main>
+			</>
+		),
+	},
+]);
+```
+
+#### Comment rendre ça plus propre ?
+
+Nous pouvons créer un composant `Layout` qui va contenir la navigation et le composant à afficher.
+
+Ce composant `Layout` sera la base de notre application, son affichage ne changera pas.
+
+Pour pouvoir passer un composant différent en fonction de l'URL, nous allons utiliser le composant `Outlet`.
+
+-   `Outlet` : permet d'afficher le composant correspondant à l'URL.
+
+Voilà à quoi ressemble notre `Layout` :
+
+```jsx
+// Layout.jsx
+import { Link, Outlet } from "react-router-dom";
+
+function Layout() {
+	return (
+		<>
+			<nav>
+				<Link to="/">Home</Link>
+				<Link to="/about">About</Link>
+			</nav>
+			<main>
+				<Outlet />
+			</main>
+		</>
+	);
+}
+
+export default Layout;
+```
+
+Maintenant que nous avons notre `Layout`, nous pouvons l'utiliser dans notre `router`.
+
+```jsx
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+// router creation
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Layout />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+		],
+	},
+]);
+```
+
+Oh, un nouveau mot clé `children` est apparu, il permet de définir les routes enfants. C'est à dire les routes qui sont dans le `Layout`.
+
+Dans notre exemple, `/` possède le composant `<Home />` et va donc être affiché dans le `Layout` à la place de `<Outlet />`. La même chose pour `/about`.
+
+Si je souhaite avoir une route qui n'est pas dans le `Layout`, je peux la définir en dehors.
+
+```jsx
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Layout />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+		],
+	},
+	{
+		path: "/contact",
+		element: <Contact />,
+	},
+]);
+```
+
+Si vous souhaitez avoir une route "dynamique", alors, vous pouvez utiliser les `paramètres`.
+
+```jsx
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Layout />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+			{
+				path: "/user/:id",
+				element: <User />,
+			},
+		],
+	},
+]);
+```
+
+Pour récupérer le paramètre, vous pouvez utiliser `useParams()`.
+
+```jsx
+// User.jsx
+
+import { useParams } from "react-router-dom";
+
+function User() {
+	// Ici, useParams est un hook qui permet de récupérer les paramètres de l'URL
+	// Dans notre cas, on récupère l'id. l'"id" est la clé que nous avons défini dans la route
+	const { id } = useParams();
+
+	return <h1>User {id}</h1>;
+}
+```
+
+:link: _Liens utiles_
+
+-   [React Router | Wild code school](https://wildcodeschool.github.io/workshop-react-router/#pourquoi-react-router)
+
+---
+
 ### :calendar: 09/04/2024
 
 :package: _Récap du jour_
