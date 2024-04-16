@@ -17,6 +17,54 @@
 
 ## Saison 3️⃣
 
+### :calendar: 16/04/2024
+
+🚨 Nouvelle notion ! 🚨
+
+Et oui, nous avons appris le nouveau hook `useEffect` aujourd'hui !
+
+### 💡 ce qu'il faut retenir
+
+-   `useEffect` prend en paramètres :
+    -   une fonction qui va être exécutée à chaque fois que le composant est rendu.
+    -   tableau de dépendances, ce tableau permet de définir quand la fonction va être exécutée.
+
+Concernant le tableau de dépendances, il est possible de définir :
+
+-   `rien` : la fonction va être exécutée à chaque fois que le composant est rendu.
+-   `[]` : la fonction va être exécutée une seule fois, au moment du rendu du composant.
+-   `[value]` : la fonction va être exécutée à chaque fois que la valeur de `value` change.
+
+```js
+import { useEffect } from "react";
+
+function App() {
+	useEffect(() => {
+		console.log("render");
+	}, []);
+
+	return <div>App</div>;
+}
+```
+
+Le hook useEffect peut être utilisé pour effectuer différentes tâches, telles que :
+
+> -   Récupérer des données depuis une API et mettre à jour l'état du composant en conséquence
+> -   Abonner le composant à des événements (ex : clics de souris, mouvements de la souris, frappes de clavier, etc.)
+> -   Mettre à jour le DOM pour refléter les changements d'état du composant
+>     Nettoyer les effets de bord, tels que les abonnements aux événements, les connexions à des API, etc.
+
+Il est important de noter que le hook useEffect doit être utilisé avec prudence, car il peut entraîner des effets de bord indésirables s'il est mal utilisé. Il est recommandé de ne pas exécuter de code coûteux dedans
+
+En résumé, le hook useEffect est un outil puissant pour gérer les effets de bord dans les composants React. Il peut être utilisé pour exécuter une logique après le rendu d'un composant, telle que la récupération de données depuis une API, l'abonnement à des événements, la mise à jour du DOM, etc.
+
+:link: _Liens utiles_
+
+-   [React lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+-   [UseEffect in Functional Component Vs Class Component Methods](https://blog.stackademic.com/useeffect-in-functional-component-vs-class-component-methods-also-starting-a-learn-react-hooks-626923fac5b5)
+
+---
+
 ### :calendar: 15/04/2024
 
 :package: _Récap du jour_
@@ -141,6 +189,8 @@ Oh, un nouveau mot clé `children` est apparu, il permet de définir les routes 
 Dans notre exemple, `/` possède le composant `<Home />` et va donc être affiché dans le `Layout` à la place de `<Outlet />`. La même chose pour `/about`.
 
 Si je souhaite avoir une route qui n'est pas dans le `Layout`, je peux la définir en dehors.
+
+![outlet](./assets/outlet.png)
 
 ```jsx
 const router = createBrowserRouter([
