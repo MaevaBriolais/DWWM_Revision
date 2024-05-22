@@ -15,7 +15,194 @@
 
 ---
 
+## Saison 4️⃣
+
+### :calendar: 22/05/2024
+
+:package: _Récap du jour_
+
+Nous avons enfin vu MySQL ! Vous allez pouvoir stocker vos données.
+
+Mais pour ce faire, un petit rappel sur les **bases de données relationnelles.**
+
+### 💡 Ce qu'il faut retenir
+
+`SQL` est un langage de manipulation de données, il permet de créer, de lire, de mettre à jour et de supprimer des données dans une base de données relationnelle.
+
+Voilà une liste des commandes SQL :
+
+```sql
+-- Création d'une base de données
+CREATE DATABASE IF NOT EXISTS `my_database`;
+
+-- Sélection de la base de données
+USE `my_database`;
+
+-- Création d'une table
+CREATE TABLE IF NOT EXISTS `my_table` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(255) NOT NULL,
+	`age` INT NOT NULL
+);
+
+-- Insertion de données
+INSERT INTO `my_table` (`name`, `age`) VALUES
+	('John', 25),
+	('Jane', 30),
+	('Bob', 20);
+
+-- Alteration de la table pour ajouter une colonne
+ALTER TABLE `my_table` ADD `email` VARCHAR(255) NOT NULL;
+
+-- Alteration de la table pour supprimer une colonne
+ALTER TABLE `my_table` DROP `email`;
+
+-- Alteration de la table pour modifier une colonne
+ALTER TABLE `my_table` MODIFY `name` VARCHAR(50);
+
+-- Sélection de toutes les données
+SELECT * FROM `my_table`;
+
+-- Sélection de données avec une condition
+SELECT * FROM `my_table` WHERE `age` > 25;
+
+-- Sélection de données avec un alias
+SELECT `name` AS `nom`, `age` AS `âge` FROM `my_table`;
+
+-- Séléction de données avec LIKE
+SELECT * FROM `my_table` WHERE `name` LIKE 'J%';
+
+-- Mise à jour de données
+UPDATE `my_table` SET `age` = 40 WHERE `name` = 'John';
+
+-- Suppression de données
+DELETE FROM `my_table` WHERE `name` = 'Bob';
+
+-- Nettoyage de la table
+TRUNCATE TABLE `my_table`;
+
+-- Suppression de la table
+DROP TABLE `my_table`;
+
+-- Suppression de la base de données
+DROP DATABASE `my_database`;
+```
+
+:link: _Liens utiles_
+
+-   [SQL [FR] - Intro](https://docs.google.com/presentation/d/1-hBQBvMN4Xud-jMk7QV47YVMgnfcWU4L8YRY0v2AljE/edit#slide=id.g27de47c1a64_0_95)
+-   [Base de données | Wild code school](https://wildcodeschool.github.io/workshop-database-introduction/)
+-   [Cours et Tutoriels sur le Langage SQL](https://sql.sh/)
+
+---
+
+## ON A ROMPICHE
+
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGRienRnenJ6MGxqMWtoeDVpb2Mya3U2azdncmY2Y3plbThheGNkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5i0RdWktDx0xW/giphy.gif)
+
+---
+
 ## Saison 3️⃣
+
+### :calendar: 23/04/2024
+
+:package: _Récap du jour_
+
+Retour à React :D
+
+Et cette fois-ci, nous allons voir la notion de `Context`.
+
+Et oui, le context est très utile pour passer des données de composant en composant sans passer par les props.
+
+### Props drilling
+
+![props drilling](https://github.com/GorskiAnthony/WCS-react-context/raw/crm/_docs/props_drilling.png)
+
+### Context
+
+![context](https://github.com/GorskiAnthony/WCS-react-context/raw/crm/_docs/context.png)
+
+L'avantage, c'est que l'on peut passer des données de composant en composant sans passer par les props.
+
+```jsx
+// context/NameContext.js
+
+// j'importe createContext depuis react ainsi que useState
+import { createContext, useState } from "react";
+
+// je crée mon context
+const NameContext = createContext("");
+
+// je crée mon provider
+const NameContextProvider = ({ children }) => {
+	const [name, setName] = useState("");
+
+	const handleChange = (e) => {
+		setName(e.target.value);
+	};
+
+	return (
+		<NameContext.Provider value={{ name, handleChange }}>
+			{children}
+		</NameContext.Provider>
+	);
+};
+
+export { NameContextProvider, NameContext };
+```
+
+Et pour l'utiliser
+
+```jsx
+// main.jsx
+// car je vais utiliser mon provider dans mon main
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+// J'encapsule mon application dans le contexte NameContextProvider
+// Maintenant, tous les composants de mon application ont accès au contexte NameContext
+import { NameContextProvider } from "./context/NameContext.jsx";
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+	<React.StrictMode>
+		<NameContextProvider>
+			<App />
+		</NameContextProvider>
+	</React.StrictMode>
+);
+```
+
+Le composant B2
+
+```jsx
+// B2.jsx
+import { useContext } from "react";
+import { NameContext } from "../context/NameContext.jsx";
+const B2 = () => {
+	// Ici, je récupère le contexte NameContext
+	// Je peux récupérer la valeur de name
+	// grâce à la destructuration
+	const { name } = useContext(NameContext);
+
+	return (
+		<div className="block">
+			<h1>B2, and hello {name} 👋</h1>
+		</div>
+	);
+};
+
+export default B2;
+```
+
+:link: _Liens utiles_
+
+-   [React [FR] - Context ](https://docs.google.com/presentation/d/1AEPYlFXoMfckTEyFFxQ-UIN2qzKzdPF6Fd49sqqKoV4/edit#slide=id.p)
+-   [GorskiAnthony/WCS-react-context](https://github.com/GorskiAnthony/WCS-react-context)
+-   [GorskiAnthony/WCS_TP_Context](https://github.com/GorskiAnthony/WCS_TP_Context)
+
+---
 
 ### :calendar: 16/04/2024
 
