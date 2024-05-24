@@ -17,6 +17,73 @@
 
 ## Saison 4️⃣
 
+### :calendar: 23/05/2024
+
+:package: _Récap du jour_
+
+Merise: Et oui, maintenant dans votre `devlodex` vous avez un nouveau mot !
+
+Merise est une méthode de conception de base de données relationnelles.
+
+Nous avons appris à faire un **MCD** (Modèle Conceptuel de Données) et un **MLD** (Modèle Logique de Données) & un **MPD** (Modèle Physique de Données).
+
+Les relations et les cardinalités sont très importantes dans la conception d'une base de données et surtout, ils n'ont plus de secret pour vous !
+
+![image](https://media.tenor.com/QdrfMv2CxRgAAAAC/office.gif)
+
+:bulb: **Ce qu'il faut retenir**
+
+### Les cardinalités
+
+Les cardinalités permettent de définir le nombre d'occurrences d'une entité qui peuvent être associées à une autre entité.
+
+Il y a 3 types de cardinalités :
+
+-   **1** : une seule occurrence.
+-   **0** : aucune occurrence.
+-   **n** : plusieurs occurrences.
+
+_Comment savoir si je met 0, 1 ou n ?_
+
+Admettons les entitées suivantes :
+
+User & Role et la relation entre les deux est `have`.
+
+```mermaid
+erDiagram
+    User ||--o{ Role : have
+```
+
+Nous nous posons la question suivante :
+
+Un _utilisateur_ a au **minimum** doit avoir un _rôle_, et un _utilisateur_ a au **maximum** un _rôle_. Donc, la cardinalité est `11` du côté de l'utilisateur.
+
+Ensuite pour le Role, un _rôle_ peut être associé au minimum a **aucun** _user_ et au **maximum** à plusieurs _utilisateurs_. Donc, la cardinalité est `0n` du côté du rôle.
+
+### Les relations
+
+Il y a 3 types de relations :
+
+-   **1 to 1** : une seule entité est liée à une autre entité.
+-   **1 to many** : une entité est liée à plusieurs entités.
+-   **many to many** : plusieurs entités sont liées à plusieurs entités.
+
+### 1 to many
+
+![1 to many](./assets/1-to-many.png)
+
+### Many to many
+
+![many to many](./assets/many-to-many.png)
+
+:link: _Liens utiles_
+
+-   [SQL - Database Modelling](https://docs.google.com/presentation/d/1LHvOGnH6PSndwHSo8ZXPZZk0lKnSGXAWUNDEYBgMsLs/edit#slide=id.g28c786c5d62_0_47)
+-   [Modéliser une base de données | Wild code school](https://wildcodeschool.github.io/workshop-db-modelisation/)
+-   [GorskiAnthony/tp-bdd](https://github.com/GorskiAnthony/tp-bdd/tree/main)
+
+---
+
 ### :calendar: 22/05/2024
 
 :package: _Récap du jour_
