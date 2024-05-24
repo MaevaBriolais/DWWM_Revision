@@ -17,6 +17,30 @@
 
 ## Saison 4️⃣
 
+### :calendar: 24/05/2024
+
+:package: _Récap du jour_
+
+Harmonia est un framwork maison, il possède l'architecture MVC.
+
+Je ne vais pas faire un récap, car le cours est assez long et je ne veux pas répéter la documentation.
+
+:bulb: Ce qu'il faut retenir (quand même)
+
+### Dossier App
+
+-   `config` : [permet de setup toute l'application](https://documentation-harmonia.vercel.app/docs/basics/backend/src/app)
+-   `controllers` : [Les controleurs une position très importante dans notre framework](https://documentation-harmonia.vercel.app/docs/basics/backend/src/controllers)
+-   `routers` : [Ce dossier permet d'organiser toutes les routes de notre application](https://documentation-harmonia.vercel.app/docs/basics/backend/src/router)
+-   `services` : contient les services de l'application (helpers)
+
+:link: _Liens utiles_
+
+-   [Harmonia - Introduction](https://docs.google.com/presentation/d/1ToH8W1j794O9yumvQ12NLZx4hZvHsjnyCfmdROor5iY/edit#slide=id.g1fa0b9efc78_0_366)
+-   [Harmonia - Documentation](https://documentation-harmonia.vercel.app/)
+
+---
+
 ### :calendar: 23/05/2024
 
 :package: _Récap du jour_
