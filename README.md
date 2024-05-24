@@ -105,6 +105,7 @@ Il y a 3 types de relations :
 -   [SQL - Database Modelling](https://docs.google.com/presentation/d/1LHvOGnH6PSndwHSo8ZXPZZk0lKnSGXAWUNDEYBgMsLs/edit#slide=id.g28c786c5d62_0_47)
 -   [Modéliser une base de données | Wild code school](https://wildcodeschool.github.io/workshop-db-modelisation/)
 -   [GorskiAnthony/tp-bdd](https://github.com/GorskiAnthony/tp-bdd/tree/main)
+-   [👨‍🎓 Après la théorie, des exos](https://github.com/GorskiAnthony/tp-bdd/tree/main?tab=readme-ov-file#-apr%C3%A8s-la-th%C3%A9orie)
 
 ---
 
