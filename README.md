@@ -150,6 +150,7 @@ cat1.age; // undefined
 :link: _Liens utiles_
 
 -   [JS with classes](https://docs.google.com/presentation/d/1pkrVtNGHeCGO7nkiUVgTmGenkZ58jZp1mzsss6Lc_jI/edit#slide=id.p)
+-   [WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-Heracles](https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-Heracles)
 
 ---
 
