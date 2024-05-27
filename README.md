@@ -34,6 +34,11 @@ Je ne vais pas faire un r√©cap, car le cours est assez long et je ne veux pas r√
 -   `routers` : [Ce dossier permet d'organiser toutes les routes de notre application](https://documentation-harmonia.vercel.app/docs/basics/backend/src/router)
 -   `services` : contient les services de l'application (helpers)
 
+![route](./assets/routes.png)
+
+Vu autrement :
+![route](./assets/route2.png)
+
 :link: _Liens utiles_
 
 -   [Harmonia - Introduction](https://docs.google.com/presentation/d/1ToH8W1j794O9yumvQ12NLZx4hZvHsjnyCfmdROor5iY/edit#slide=id.g1fa0b9efc78_0_366)
