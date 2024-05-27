@@ -17,6 +17,142 @@
 
 ## Saison 4️⃣
 
+### :calendar: 27/05/2024
+
+:package: _Récap du jour_
+
+Les bases de la POO
+
+Ce matin, nous avons vu la `POO` (Programmation Orientée Objet).
+
+Nous avons vu plein de chose :
+
+-   Les classes (en PascalCase)
+    -   `class MyClass {}`
+-   Les méthodes (en camelCase)
+    -   `sayHello() {}`
+-   Les propriétés publiques & privées
+    -   `this.name = "John"`
+    -   `this.#lastname = "Doe"`
+-   Les constructeurs
+    -   `constructor(name, lastname) { this.name = name; this.#lastname = lastname; }`
+-   super
+    -   `super(name, lastname)`
+    -   permet d'appeler le constructeur de la classe parente
+
+![poo](./assets/super.png)
+
+-   Les getters & setters
+    -   `getName() { return this._name }` | `setName(name) { this._name = name }`
+-   Les héritages
+    -   `class MyClass extends MyOtherClass {}`
+
+```js
+// Création d'une classe
+class Obj = {
+	constructor(param1, param2) {
+		// this fait référence à l'instance
+		this.param1 = param1;
+		this.param2 = param2;
+	}
+	method1() {
+		return this.param1;
+	}
+	method2() {
+		return this.param2;
+	}
+}
+```
+
+### 💡 Ce qu'il faut retenir !
+
+Au lieu de répéter le même code pour créer plusieurs objets, nous pouvons créer une classe et créer des `instances` de cette classe.
+
+### 😭 Avant
+
+```js
+const student = {
+	name: "Julie",
+	campus: "Berlin",
+	age: 30,
+	isGratuated: true,
+	skills: ["JS", "React"],
+	sayHello: function () {
+		return "Hello, my name is " + this.name;
+	},
+};
+
+const student1 = {
+	name: "Marc",
+	campus: "Lisbonne",
+	age: 34,
+	isGratuated: true,
+	skills: ["Python"],
+	sayHello: function () {
+		return "Hello, my name is " + this.name;
+	},
+};
+```
+
+### 😍 Après
+
+```js
+class Student {
+	constructor(name, age, skills, isGraduated) {
+		this.name = name;
+		this.age = age;
+		this.skills = skills;
+		this.isGraduated = isGraduated;
+	}
+
+	sayHello() {
+		return "Hello, my name is " + this.name;
+	}
+}
+
+const student = new Student("Julie", 30, ["JS", "React"], true);
+const student1 = new Student("Marc", 34, ["Python"], true);
+```
+
+Nous pouvons définir une propriété privée avec le signe `#`.
+
+```js
+class Cat {
+	#age;
+	constructor(name, age, race) {
+		this.name = name;
+		this.#age = age;
+		this.race = race;
+	}
+
+	getAge() {
+		return this.#age;
+	}
+
+	setAge(age) {
+		this.#age = age;
+	}
+
+	talk() {
+		return "Meow...... (" + this.name + " says)";
+	}
+}
+
+const cat1 = new Cat("Biscotte", 5, "non défini");
+const cat2 = new Cat("Gaïa", 11, "européenne");
+
+cat1.getAge(); // 5
+cat1.setAge(6); // nouvelle valeur, age = 6
+cat1.getAge(); // 6
+cat1.age; // undefined
+```
+
+:link: _Liens utiles_
+
+-   [JS with classes](https://docs.google.com/presentation/d/1pkrVtNGHeCGO7nkiUVgTmGenkZ58jZp1mzsss6Lc_jI/edit#slide=id.p)
+
+---
+
 ### :calendar: 24/05/2024
 
 :package: _Récap du jour_
