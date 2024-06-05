@@ -17,6 +17,182 @@
 
 ## Saison 4️⃣
 
+### Support Harmonia
+
+Nous avons fait un petit support sur Harmonia, le framework maison de la Wild.
+
+Je remercie [Lukasz](https://github.com/Lukasz-Grzegorzewski) pour les images de fou ! :heart:
+
+![MVC](./assets/harmonia/mvc.png)
+![Schema](./assets/harmonia/schema-harmonia.png)
+![Detail](./assets/harmonia/details-harmonia.png)
+
+-   [Harmonia - Documentation](https://documentation-harmonia.vercel.app/)
+-   [Github/ JS-RemoteFR-CrewDragon-Demo-Harmonia](https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-Demo-Harmonia)
+
+### :calendar: 04/06/2024
+
+:package: _Récap du jour_
+
+SQL AVANCÉ !! :scream:
+
+![scream](https://media1.tenor.com/m/GrY8Qh9_3ZQAAAAC/screaming-gif-scream.gif)
+
+#### Where
+
+-   AND / OR
+
+```sql
+SELECT * FROM users
+WHERE name = 'John' AND age = 25;
+-- WHERE name = 'John' OR age = 25;
+```
+
+-   LIKE
+    -   Attention, inssensible à la casse
+    -   "%" : n'importe quel caractère
+    -   "a%" : commence par a
+    -   "%a" : fini par a
+    -   "%a%" : contient a
+
+```sql
+SELECT * FROM users
+WHERE name LIKE 'J%';
+```
+
+-   BETWEEN
+
+```sql
+SELECT * FROM users
+WHERE age BETWEEN 18 AND 25;
+```
+
+-   IS NULL / IS NOT NULL
+
+```sql
+SELECT * FROM users
+WHERE age IS NULL;
+```
+
+```sql
+SELECT * FROM users
+WHERE age IS NOT NULL;
+```
+
+#### DISTINCT
+
+Distinct permet de récupérer des valeurs uniques.
+
+```sql
+SELECT DISTINCT(name) FROM users;
+```
+
+#### FONTIONS
+
+-   LENGTH
+
+```sql
+SELECT LENGTH(name) FROM users;
+```
+
+-   CONCAT
+
+```sql
+SELECT CONCAT(name, ' ', lastname) FROM users;
+```
+
+#### DATE
+
+-   NOW
+
+```sql
+SELECT NOW() FROM users;
+```
+
+-   DATE_FORMAT
+
+```sql
+SELECT DATE_FORMAT(NOW(), '%d/%m/%Y') FROM users;
+```
+
+#### AGRÉGATION
+
+-   COUNT
+
+```sql
+SELECT COUNT(*) FROM users;
+```
+
+-   MAX / MIN
+
+```sql
+SELECT MAX(age) FROM users;
+```
+
+```sql
+SELECT MIN(age) FROM users;
+```
+
+-   AVG
+
+```sql
+SELECT AVG(age) FROM users;
+```
+
+#### GROUP BY
+
+```sql
+SELECT name, COUNT(*) FROM users
+GROUP BY name;
+```
+
+#### HAVING
+
+Having est un WHERE pour les agrégations. (ici, COUNT)
+
+```sql
+SELECT name, COUNT(*) FROM users
+GROUP BY name
+HAVING COUNT(*) > 1;
+```
+
+#### JOINTURE
+
+il y a 3 types de jointures très utilisées :
+
+-   (INNER) JOIN
+
+ici, inner est entre parenthèse car c'est le type de jointure par défaut.
+
+```sql
+SELECT * FROM users
+INNER JOIN posts ON users.id = posts.user_id;
+```
+
+-   LEFT JOIN
+
+```sql
+SELECT * FROM users
+LEFT JOIN posts ON users.id = posts.user_id;
+```
+
+-   RIGHT JOIN
+
+```sql
+SELECT * FROM users
+RIGHT JOIN posts ON users.id = posts.user_id;
+```
+
+![join](assets/jointure.png)
+
+:link: _Liens utiles_
+
+-   [SQL [FR] - SQL advanced](https://docs.google.com/presentation/d/1orbLKDs8psiRUfisx7rMNw0otnq89n4iAJXiq-kLD9s/edit#slide=id.g2902997d1b6_0_47)
+-   [BDD Advanced | Wild code school](https://wildcodeschool.github.io/workshop-db-advanced/)
+-   [The SQL Murder Mystery](https://mystery.knightlab.com/)
+
+---
+
 ### :calendar: 27/05/2024
 
 :package: _Récap du jour_
